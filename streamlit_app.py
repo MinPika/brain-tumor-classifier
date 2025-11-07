@@ -280,10 +280,10 @@ def main():
             if uploaded_file is not None:
                 # Display original image
                 image = Image.open(uploaded_file)
-                st.image(image, caption="Uploaded MRI Scan", use_container_width=True)
+                st.image(image, caption="Uploaded MRI Scan", use_column_width=True)
                 
                 # Analyze button
-                if st.button("🔍 Analyze Image", type="primary", use_container_width=True):
+                if st.button("🔍 Analyze Image", type="primary"):
                     with st.spinner("Analyzing MRI scan..."):
                         # Preprocess
                         preprocessed_img, display_img = preprocess_image(image)
@@ -323,7 +323,7 @@ def main():
                     st.markdown("#### 🔧 Preprocessed Image")
                     st.image(st.session_state['display_img'], 
                             caption=f"Grayscale {IMAGE_SIZE[0]}x{IMAGE_SIZE[1]}", 
-                            use_container_width=True,
+                            use_column_width=True,
                             clamp=True)
                 
                 # Confidence scores
@@ -375,8 +375,7 @@ Always consult with qualified medical professionals for diagnosis and treatment.
                     label="📄 Download Report (TXT)",
                     data=result_text,
                     file_name=f"brain_tumor_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt",
-                    mime="text/plain",
-                    use_container_width=True
+                    mime="text/plain"
                 )
     
     # ========================================================================
@@ -421,7 +420,7 @@ Always consult with qualified medical professionals for diagnosis and treatment.
                 
                 import pandas as pd
                 df = pd.DataFrame(results)
-                st.dataframe(df, use_container_width=True)
+                st.dataframe(df)
                 
                 # Summary statistics
                 col1, col2, col3, col4 = st.columns(4)
@@ -454,7 +453,7 @@ Always consult with qualified medical professionals for diagnosis and treatment.
                     paper_bgcolor='white',
                     showlegend=False
                 )
-                st.plotly_chart(fig, use_container_width=True)
+                st.plotly_chart(fig)
                 
                 # Download batch results
                 csv = df.to_csv(index=False)
@@ -462,8 +461,7 @@ Always consult with qualified medical professionals for diagnosis and treatment.
                     label="📥 Download Batch Results (CSV)",
                     data=csv,
                     file_name=f"batch_analysis_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
-                    mime="text/csv",
-                    use_container_width=True
+                    mime="text/csv"
                 )
     
     # ========================================================================

@@ -614,7 +614,7 @@ The authors and contributors assume no liability for any harm resulting from use
 - 🌐 **Live Demo:** [https://brain-tumor-classifier-esl372-project.streamlit.app/](https://brain-tumor-classifier-esl372-project.streamlit.app/)
 - 📂 **GitHub Repository:** [https://github.com/MinPika/brain-tumor-classifier](https://github.com/MinPika/brain-tumor-classifier)
 - 📊 **Dataset:** [Kaggle - Brain Tumor MRI](https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri)
-- 📄 **Technical Report:** [Project Report.pdf](Project Report.pdf)
+- 📄 **Technical Report:** [Project Report.pdf](https://github.com/MinPika/brain-tumor-classifier/blob/main/Project%20Report.pdf)
 
 ---
 

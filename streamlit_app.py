@@ -270,12 +270,6 @@ def main():
                 help="Upload a brain MRI scan for classification"
             )
             
-            # Sample images option
-            st.markdown("#### Or try a sample image:")
-            sample_choice = st.selectbox(
-                "Select sample:",
-                ["None", "Glioma Sample", "Meningioma Sample", "Normal Sample", "Pituitary Sample"]
-            )
             
             if uploaded_file is not None:
                 # Display original image

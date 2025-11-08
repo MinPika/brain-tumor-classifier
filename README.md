@@ -62,12 +62,6 @@ An advanced deep learning application that classifies brain MRI scans into four 
 
 ## 🎬 Demo
 
-### Single Image Classification
-![Single Image Demo](https://via.placeholder.com/800x400/667eea/ffffff?text=Upload+%E2%86%92+Analyze+%E2%86%92+Results)
-
-### Batch Analysis
-![Batch Analysis Demo](https://via.placeholder.com/800x400/764ba2/ffffff?text=Multiple+Images+%E2%86%92+Summary+Statistics)
-
 **Try it live:** Visit [our deployed application](https://brain-tumor-classifier-esl372-project.streamlit.app/)
 
 ---
@@ -322,33 +316,9 @@ brain-tumor-classifier/
 ├── requirements.txt           # Python dependencies
 ├── README.md                  # This file
 │
-├── notebooks/                 # Jupyter notebooks
-│   ├── 01_eda.ipynb          # Exploratory data analysis
-│   ├── 02_baseline_cnn.ipynb # Baseline model development
-│   └── 03_improved_cnn.ipynb # Improved model training
+│── baseline-cnn.ipynb # Baseline model development
+│── cnn-improved.ipynb # Improved model training
 │
-├── src/                       # Source code modules
-│   ├── __init__.py
-│   ├── preprocessing.py       # Image preprocessing utilities
-│   ├── model.py              # Model architecture definitions
-│   ├── training.py           # Training scripts
-│   └── evaluation.py         # Evaluation utilities
-│
-├── data/                      # Dataset (not included in repo)
-│   ├── Training/
-│   └── Testing/
-│
-├── models/                    # Saved models
-│   ├── baseline_cnn.keras
-│   └── improved_cnn.keras
-│
-├── reports/                   # Generated reports
-│   ├── figures/              # Plots and visualizations
-│   └── ESL372_project.pdf    # Full technical report
-│
-└── tests/                     # Unit tests
-    ├── test_preprocessing.py
-    └── test_model.py
 ```
 
 ---
@@ -592,7 +562,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 - All open-source library maintainers
 
 ### Inspiration
-This project was inspired by coursework in Advanced Functional Neuroimaging (COL786) and ongoing Bachelor's Thesis research in neuroimaging at IIT Delhi.
+This project was inspired by coursework in INTELLIGENT TECHNIQUES FOR ENERGY SYSTEM ANALYSIS (ESL372).
 
 ---
 
@@ -644,7 +614,7 @@ The authors and contributors assume no liability for any harm resulting from use
 - 🌐 **Live Demo:** [https://brain-tumor-classifier-esl372-project.streamlit.app/](https://brain-tumor-classifier-esl372-project.streamlit.app/)
 - 📂 **GitHub Repository:** [https://github.com/MinPika/brain-tumor-classifier](https://github.com/MinPika/brain-tumor-classifier)
 - 📊 **Dataset:** [Kaggle - Brain Tumor MRI](https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri)
-- 📄 **Technical Report:** [ESL372_project.pdf](reports/ESL372_project.pdf)
+- 📄 **Technical Report:** [Project Report.pdf](Project Report.pdf)
 
 ---
 
@@ -658,7 +628,7 @@ If you find this project helpful, please consider giving it a ⭐ on GitHub!
 
 <div align="center">
 
-**Made with ❤️ by Rohit Agarwal | IIT Delhi**
+**Made by Rohit Agarwal | IIT Delhi**
 
 *Advancing healthcare through artificial intelligence*
 
